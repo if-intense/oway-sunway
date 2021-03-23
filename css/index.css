@@ -1,0 +1,243 @@
+body {
+  background: #fff;
+  overflow-x: hidden; }
+
+.nav-logo {
+  width: 200px;
+  height: 40px; }
+
+.jumbotron {
+  padding-top: 56.25%;
+  background: url("../img/top-img.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0;
+  position: relative; }
+  .jumbotron .logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 20%;
+    text-align: center; }
+    .jumbotron .logo p {
+      font-weight: bold;
+      font-size: 2em; }
+
+.sect h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #fff; }
+.sect h4 {
+  font-size: 1em;
+  text-align: center;
+  color: #fff; }
+.sect .about-sunway {
+  margin: 3vh auto;
+  padding: 20px 30px; }
+  .sect .about-sunway p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 2em; }
+.sect .patented-test {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.67); }
+.sect .characteristics {
+  background: #fff;
+  text-align: center;
+  padding: 20px 10px; }
+  .sect .characteristics h5 {
+    text-transform: uppercase;
+    font-size: 20px; }
+  .sect .characteristics h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px; }
+  .sect .characteristics p {
+    margin: 30px auto;
+    font-size: 14px;
+    line-height: 2em;
+    text-align: left; }
+
+.pt {
+  background: url("../img/img-orto.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -40px;
+  padding: 5vh 0; }
+  .pt .sect h2 {
+    color: black;
+    font-weight: bold; }
+  .pt .sect .about-oway {
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 5px;
+    box-shadow: 3px 6px 6px rgba(50, 50, 50, 0.7);
+    line-height: 2em; }
+
+.pt1 {
+  background: #434343;
+  padding: 4vh 0; }
+
+.pt2 {
+  background: #808080;
+  padding: 4vh 0; }
+
+.pt3 {
+  background: #9f9f9f;
+  padding: 4vh 0; }
+  .pt3 .sect {
+    margin: 0 40px; }
+    .pt3 .sect .preservative-free {
+      margin: 5vh auto; }
+      .pt3 .sect .preservative-free h2 {
+        font-size: 32px; }
+      .pt3 .sect .preservative-free .center-text {
+        margin: 0 auto; }
+      .pt3 .sect .preservative-free p {
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 2vh;
+        line-height: 2em; }
+
+.pt4 {
+  background: #434343;
+  padding: 4vh 0; }
+  .pt4 .instructions {
+    margin: 3vh auto;
+    color: #fff; }
+    .pt4 .instructions h3 {
+      margin-top: 3vh;
+      font-size: 20px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #fff; }
+      .pt4 .instructions h3 span {
+        text-shadow: 1px 1px 3px #000; }
+    .pt4 .instructions p {
+      font-size: 16px;
+      line-height: 2em;
+      margin-left: 20px;
+      margin-right: 20px; }
+
+.pt5 {
+  background: #808080;
+  padding: 4vh 0; }
+  .pt5 .sect .products {
+    width: 85%;
+    max-width: 1740px;
+    margin: 4vh auto; }
+    .pt5 .sect .products .disp-product {
+      background: white;
+      text-align: center;
+      box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.38);
+      padding: 0 0 3vh 0; }
+      .pt5 .sect .products .disp-product h3 {
+        font-size: 20px; }
+      .pt5 .sect .products .disp-product h4 {
+        font-size: 16px;
+        color: black; }
+      .pt5 .sect .products .disp-product h5 {
+        font-size: 12px; }
+      .pt5 .sect .products .disp-product h6 {
+        font-size: 16px; }
+        .pt5 .sect .products .disp-product h6 span {
+          font-weight: bold; }
+      .pt5 .sect .products .disp-product p.price {
+        font-size: 24px;
+        color: #b51423; }
+        .pt5 .sect .products .disp-product p.price strong {
+          font-size: 40px; }
+      .pt5 .sect .products .disp-product p.with-tax {
+        font-size: 16px; }
+        .pt5 .sect .products .disp-product p.with-tax span {
+          font-size: 24px; }
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 2em 0;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  text-align: center; }
+  .circle .circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .circle .circle__inner .circle__wrapper {
+      display: table;
+      width: 100%;
+      height: 100%; }
+    .circle .circle__inner .circle__content {
+      display: table-cell;
+      padding: 1em;
+      vertical-align: middle; }
+
+.circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #ec6940;
+  content: "";
+  box-shadow: 1px 3px 6px rgba(25, 25, 25, 0.67); }
+
+.card {
+  background-color: transparent;
+  border: transparent; }
+  .card .card-text-area {
+    color: white; }
+
+footer {
+  background: #fff; }
+  footer .footer-contents {
+    text-align: center;
+    font-size: 0.9em; }
+    footer .footer-contents p {
+      color: #434343; }
+      footer .footer-contents p a {
+        padding: 0 10px;
+        color: #434343;
+        text-decoration: none; }
+      footer .footer-contents p a:hover {
+        padding-bottom: 3px;
+        font-weight: bold;
+        border-bottom: 1px solid #434343; }
+
+@media (max-width: 992px) {
+  .disp-product {
+    margin: 20px auto; } }
+@media (max-width: 768px) {
+  .pt5 .sect .products {
+    width: 100%;
+    max-width: 768px; }
+    .pt5 .sect .products .disp-product {
+      margin: 20px auto; }
+
+  .jumbotron .logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 15%;
+    text-align: center; }
+    .jumbotron .logo p {
+      font-weight: bold;
+      font-size: 1em; } }
+@media (max-width: 576px) {
+  .disp-product {
+    margin: 20px auto; }
+
+  footer {
+    background: #fff; }
+    footer .footer-contents {
+      text-align: center;
+      font-size: 0.7em; }
+      footer .footer-contents p a {
+        padding: 0 5px; } }
+
+/*# sourceMappingURL=index.css.map */
