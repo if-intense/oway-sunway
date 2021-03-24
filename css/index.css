@@ -19,7 +19,8 @@ body {
     left: 10px; }
     .jumbotron .logo p {
       font-weight: bold;
-      font-size: 2em; }
+      font-size: 2em;
+      text-align: center; }
 
 .sect h2 {
   font-size: 2em;
