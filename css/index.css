@@ -103,15 +103,15 @@ body {
         margin-top: 3vh;
         padding: 0 10px; }
   .pt2 .sect .uv-sun {
-    background: url("../img/img011.jpg");
+    background: url("../img/img018.jpg") no-repeat;
     background-size: cover;
-    background-position: center; }
+    background-position: left top; }
   .pt2 .sect .preservation-free {
     background: url("../img/img012.jpg") no-repeat;
     background-position: right top;
     background-size: cover; }
   .pt2 .sect .nickel-test {
-    background: url("../img/img013.jpg") no-repeat;
+    background: url("../img/img014.jpg") no-repeat;
     background-position: center;
     background-size: cover; }
   .pt2 .sect .dermatology-test {
@@ -319,9 +319,9 @@ footer {
       max-height: 400px; }
       .pt2 .sect .char .content {
         background: rgba(255, 255, 255, 0.8);
-        height: calc(100vh / 3);
-        max-height: h3;
-          max-height-padding-top: 20px; }
+        height: calc(100vh / 3); }
+        .pt2 .sect .char .content h3 {
+          padding-top: 20px; }
         .pt2 .sect .char .content p {
           font-size: 0.8em; }
 
