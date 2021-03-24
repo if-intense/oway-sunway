@@ -16,9 +16,7 @@ body {
   .jumbotron .logo {
     position: absolute;
     top: 20px;
-    left: 10px;
-    width: 20%;
-    text-align: center; }
+    left: 10px; }
     .jumbotron .logo p {
       font-weight: bold;
       font-size: 2em; }
@@ -82,6 +80,44 @@ body {
 .pt2 {
   background: #808080;
   padding: 4vh 0; }
+  .pt2 .sect .char {
+    padding: 3vh;
+    border: rgba(80, 80, 80, 0.5) 1px solid;
+    height: calc(100vh / 3);
+    max-height: 350px;
+    margin-top: auto;
+    margin-bottom: auto; }
+    .pt2 .sect .char .content {
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.37);
+      height: calc(100vh / 4);
+      max-height: 320px; }
+      .pt2 .sect .char .content h3 {
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: bold;
+        padding-top: 20px; }
+      .pt2 .sect .char .content p {
+        font-size: 0.9em;
+        line-height: 2em;
+        margin-top: 3vh;
+        padding: 0 10px; }
+  .pt2 .sect .uv-sun {
+    background: url("../img/img011.jpg");
+    background-size: cover;
+    background-position: center; }
+  .pt2 .sect .preservation-free {
+    background: url("../img/img012.jpg") no-repeat;
+    background-position: right top;
+    background-size: cover; }
+  .pt2 .sect .nickel-test {
+    background: url("../img/img013.jpg") no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .pt2 .sect .dermatology-test {
+    background: url("../img/bg001.png") no-repeat;
+    background-position: center;
+    background-size: cover; }
 
 .pt3 {
   background: #9f9f9f;
@@ -187,6 +223,20 @@ body {
   content: "";
   box-shadow: 1px 3px 6px rgba(25, 25, 25, 0.67); }
 
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%; }
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto; }
+
 .card {
   background-color: transparent;
   border: transparent; }
@@ -211,8 +261,36 @@ footer {
 
 @media (max-width: 992px) {
   .disp-product {
-    margin: 20px auto; } }
+    margin: 20px auto; }
+
+  .pt2 {
+    padding: 4vh 0; }
+    .pt2 .sect .char {
+      padding: 20px;
+      border: rgba(80, 80, 80, 0.5) 1px solid;
+      height: calc(100vh / 3);
+      max-height: 325px; }
+      .pt2 .sect .char .content {
+        background: rgba(255, 255, 255, 0.8);
+        height: calc(100vh / 4); }
+        .pt2 .sect .char .content p {
+          font-size: 0.8em; } }
 @media (max-width: 768px) {
+  .pt2 {
+    padding: 4vh 0; }
+    .pt2 .sect .char {
+      padding: 20px;
+      border: rgba(80, 80, 80, 0.5) 1px solid;
+      height: calc(100vh / 4);
+      max-height: 300px; }
+      .pt2 .sect .char .content {
+        background: rgba(255, 255, 255, 0.8);
+        height: calc(100vh / 5); }
+        .pt2 .sect .char .content h3 {
+          padding-top: 20px; }
+        .pt2 .sect .char .content p {
+          font-size: 0.8em; }
+
   .pt5 .sect .products {
     width: 100%;
     max-width: 768px; }
@@ -231,6 +309,21 @@ footer {
 @media (max-width: 576px) {
   .disp-product {
     margin: 20px auto; }
+
+  .pt2 {
+    padding: 2vh 0; }
+    .pt2 .sect .char {
+      padding: 20px;
+      border: rgba(80, 80, 80, 0.5) 1px solid;
+      height: calc(100vh / 2);
+      max-height: 400px; }
+      .pt2 .sect .char .content {
+        background: rgba(255, 255, 255, 0.8);
+        height: calc(100vh / 3);
+        max-height: h3;
+          max-height-padding-top: 20px; }
+        .pt2 .sect .char .content p {
+          font-size: 0.8em; }
 
   footer {
     background: #fff; }
