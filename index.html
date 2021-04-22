@@ -7,9 +7,91 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
   <title>OWAY SUNWAY</title>
   <link rel="stylesheet" href="css/index.css">
+  <script>
+    jQuery(document).ready(function ($) {
+      var owl = $("#carousel");
+      owl.owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        items: 3,
+        loop: true,
+        center: false,
+        rewind: false,
+        mouseDrag: true,
+        touchDrag: true,
+        pullDrag: true,
+        freeDrag: false,
+        margin: 0,
+        stagePadding: 0,
+        merge: false,
+        mergeFit: true,
+        autoWidth: false,
+        startPosition: 0,
+        rtl: false,
+        smartSpeed: 2000,
+        fluidSpeed: false,
+        dragEndSpeed: false,
+        responsive: {
+          0: {
+            items: 1
+            // nav: true
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          768: {
+            items: 3,
+            // nav: true,
+            loop: true
+          },
+          992: {
+            items: 3,
+            // nav: true,
+            loop: true
+          },
+          1200: {
+            items: 3,
+            loop:true
+          }
+        },
+        responsiveRefreshRate: 1000,
+        responsiveBaseElement: window,
+        fallbackEasing: "swing",
+        info: false,
+        nestedItemSelector: false,
+        itemElement: "div",
+        stageElement: "div",
+        refreshClass: "owl-refresh",
+        loadedClass: "owl-loaded",
+        loadingClass: "owl-loading",
+        rtlClass: "owl-rtl",
+        responsiveClass: "owl-responsive",
+        dragClass: "owl-drag",
+        itemClass: "owl-item",
+        stageClass: "owl-stage",
+        stageOuterClass: "owl-stage-outer",
+        grabClass: "owl-grab",
+        autoHeight: false,
+        lazyLoad: false
+      });
+
+      $(".next").click(function () {
+        owl.trigger("owl.next");
+      });
+      $(".prev").click(function () {
+        owl.trigger("owl.prev");
+      });
+    });
+  </script>
 </head>
+
+
 <body>
 
   <div class="wrapper">
@@ -209,7 +291,7 @@
           <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
 
 
-            <div class="row col-lg-8 offset-lg-2 col-10 offset-1 instruction-product mb-5">
+            <div class="row col-lg-8 offset-lg-2 col-12 instruction-product mb-5">
               <div class="col-lg-4 col-4">
                 <img src="img/product003.png" alt="アフターサン ヘア＆ボディ バス" class="img-fluid">
               </div>
@@ -225,7 +307,7 @@
             <p class="mb-5">サロンケアとして、特に紫外線が強い日や紫外線によるダメージを受けたお客様に、アフターサンヘア＆ボディーバスで髪と頭皮。クレンジング後、
               アフターサンケア・ヘアマスクで、髪に集中的に栄養を与えて補修します。そして、ドライ後にサン・プロテクティブ・エリクサーをスプレーします。柑橘系のエッセンシャルオイルで癒しを与えます。</p>
 
-              <div class="row col-lg-8 offset-lg-2 col-10 offset-1 instruction-product mb-5 justify-content-center">
+              <div class="row col-lg-8 offset-lg-2 col-12 instruction-product mb-5 justify-content-center">
                 <div class="col-lg-4 col-4">
                   <img src="img/product003.png" alt="アフターサン ヘア＆ボディ バス" class="img-fluid">
                 </div>
@@ -236,7 +318,7 @@
             <h3><span>【ステップ 2】</span> ホームケアとして</h3>
             <p class="mb-5">日々降り注ぐ紫外線や物理的なダメージ、乾燥に対して、アフターサン・ヘア＆ボディーバスとアフターサン・ヘアマスクをデイリーケアとしてご使用していただけます。</p>
 
-            <div class="row col-lg-8 offset-lg-2 col-10 offset-1 instruction-product mb-5">
+            <div class="row col-lg-8 offset-lg-2 col-12 instruction-product mb-5">
               <div class="col-lg-4 offset-lg-4 col-4 offset-4">
                 <img src="img/product001.png" alt="アフターサン ヘア マスク" class="img-fluid">
               </div>
@@ -253,7 +335,7 @@
         <div class="sect">
           <h2>product line-up</h2>
           <h4>製品ラインナップ</h4>
-          <div class="products row justify-content-center">
+          <!-- <div class="products row justify-content-center">
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
              <div class="disp-product">
@@ -262,24 +344,11 @@
               </a>
               <h3>after-sun hair & body bath</h3>
               <h4>アフターサン ヘア＆ボディ バス</h4>
-              <!-- <h5>(アフターサン ヘア＆ボディ・シャンプー)</h5> -->
+              
               <h6><span>サイズ:</span> 240ml</h6>
               <p class="price"><strong>3400</strong>円</p>
               <p class="with-tax">(税込<span>3740</span>円)</p>
              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="disp-product">
-                <a href="https://ifing-beauty.com/products/detail/51">
-                <img src="img/product001.png" alt="サン プロテクティブ エリクサー" class="img-fluid">
-              </a>
-              <h3>sun protective elixir</h3>
-              <h4>サン プロテクティブ エリクサー</h4>
-              <!-- <h5>(アフターサン ヘア＆ボディ・シャンプー)</h5> -->
-              <h6><span>サイズ:</span> 240ml</h6>
-              <p class="price"><strong>3800</strong>円</p>
-              <p class="with-tax">(税込<span>4180</span>円)</p>
-              </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
               <div class="disp-product">
@@ -288,14 +357,106 @@
               </a>
               <h3>after-sun hair mask</h3>
               <h4>アフターサン ヘア マスク</h4>
-              <!-- <h5>(アフターサン ヘア＆ボディ・シャンプー)</h5> -->
-              <h6><span>サイズ:</span> 240ml</h6>
+              
+              <h6><span>サイズ:</span> 150ml</h6>
               <p class="price"><strong>3200</strong>円</p>
               <p class="with-tax">(税込<span>3520</span>円)</p>
               </div>
             </div>
-          </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="disp-product">
+                <a href="https://ifing-beauty.com/products/detail/51">
+                <img src="img/product001.png" alt="サン プロテクティブ エリクサー" class="img-fluid">
+              </a>
+              <h3>sun protective elixir</h3>
+              <h4>サン プロテクティブ エリクサー</h4>
+              
+              <h6><span>サイズ:</span> 100ml</h6>
+              <p class="price"><strong>3800</strong>円</p>
+              <p class="with-tax">(税込<span>4180</span>円)</p>
+              </div>
+            </div>
+            
+          </div> -->
+
+          <section>
+            <div class="col-xl-10 offset-xl-1">
+              <div id="carousel" class="owl-carousel owl-theme">
+    
+                <div class="product item">
+                  <a href="https://ifing-beauty.com/products/detail/47">
+                  <img src="img/product001.png" alt="アフターサン ヘア＆ボディ バス" class="img-fluid">
+                  </a>
+                  <h3>after-sun hair & body bath</h3>
+                  <h4>アフターサン ヘア＆ボディ バス</h4>
+                  <h6><span>サイズ:</span> 240ml</h6>
+                  <p class="price"><strong>3400</strong>円</p>
+                  <p class="with-tax">(税込<span>3740</span>円)</p>
+                </div>
+    
+                <div class="product item">
+                  
+                  <a href="https://ifing-beauty.com/products/detail/49">
+                  <img src="img/product002.png" alt="アフターサン ヘア＆ボディ バス" class="img-fluid">
+                  </a>
+                  <h3>after-sun hair & body bath</h3>
+                  <h4>アフターサン ヘア＆ボディ バス</h4>
+                  <h6><span>サイズ:</span> 950ml</h6>
+                  <p class="price"><strong>6800</strong>円</p>
+                  <p class="with-tax">(税込<span>7480</span>円)</p>
+                  
+                </div>
+    
+                <div class="product item">
+                  
+                    <a href="https://ifing-beauty.com/products/detail/51">
+                    <img src="img/product003.png" alt="サン プロテクティブ エリクサー" class="img-fluid">
+                  </a>
+                  <h3>after-sun hair mask</h3>
+                  <h4>アフターサン ヘア マスク</h4>
+                  
+                  <h6><span>サイズ:</span> 150ml</h6>
+                  <p class="price"><strong>3200</strong>円</p>
+                  <p class="with-tax">(税込<span>3520</span>円)</p>
+                  
+                </div>
+    
+                <div class="product item">
+                  
+                    <a href="https://ifing-beauty.com/products/detail/51">
+                    <img src="img/product004.png" alt="アフターサン ヘア マスク" class="img-fluid">
+                  </a>
+                  <h3>after-sun hair mask</h3>
+                  <h4>アフターサン ヘア マスク</h4>
+                  
+                  <h6><span>サイズ:</span> 500ml</h6>
+                  <p class="price"><strong>6400</strong>円</p>
+                  <p class="with-tax">(税込<span>7040</span>円)</p>
+                  
+                </div>
+    
+                <div class="product item">
+                  
+                    <a href="https://ifing-beauty.com/products/detail/51">
+                    <img src="img/product005.png" alt="サン プロテクティブ エリクサー" class="img-fluid">
+                  </a>
+                  <h3>sun protective elixir</h3>
+                  <h4>サン プロテクティブ エリクサー</h4>
+                  
+                  <h6><span>サイズ:</span> 100ml</h6>
+                  <p class="price"><strong>3800</strong>円</p>
+                  <p class="with-tax">(税込<span>4180</span>円)</p>
+                  
+                </div>
+    
+                
+    
+              </div><!-- #carousel -->
+            </div><!-- .container -->
+          </section>
+          
         </div>
+
       </div>
 
 
@@ -316,6 +477,7 @@
 
 
   </div>
-
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </html>
