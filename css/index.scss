@@ -44,7 +44,7 @@ body {
     text-align:center;
     color:$primary-white;
   }
-  
+
   .about-sunway {
     margin:3vh auto;
     padding:20px 30px;
@@ -127,7 +127,7 @@ body {
         max-height:320px;
         h3 {
           // color:red;
-          
+
           text-align:center;
           font-size:1.25em;
           font-weight:bold;
@@ -150,7 +150,7 @@ body {
       background:url('../img/img012.jpg') no-repeat;
       background-position: right top;
       background-size:cover;
-    } 
+    }
     .nickel-test {
       background:url('../img/img014.jpg') no-repeat;
       background-position: center;
@@ -247,7 +247,7 @@ body {
           text-align:center;
           margin-top:3vh;
           font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-          font-weight: normal; 
+          font-weight: normal;
           font-size:24px;
         }
         h4 {
@@ -422,10 +422,14 @@ footer {
     margin:20px auto;
   }
 
+  .pt1 {
+    padding:3vh 0 0 0;
+  }
+
   .pt2 {
     padding:2vh 0;
     .sect {
-      
+
       .char {
         // margin:3vh;
         padding:20px;
@@ -446,6 +450,16 @@ footer {
     }
   }
 
+  .sect {
+    .about-sunway {
+      padding:20px 15px;
+      margin:0;
+      p {
+        font-size:0.9em;
+      }
+    }
+  }
+
   footer {
   background: $primary-white;
     .footer-contents {
@@ -459,6 +473,34 @@ footer {
     }
   }
 
+
+}
+
+
+@media (max-width:375px) {
+  .pt1 {
+    padding:2vh 0;
+  }
+
+  .sect {
+    .about-sunway {
+      padding:20px 15px;
+      p {
+        font-size:0.8em;
+      }
+    }
+  }
+
+  .pt4 {
+    .instructions {
+      h3 {
+        font-size:1em;
+      }
+      p {
+        font-size:0.9em;
+      }
+    }
+  }
 
 }
 
