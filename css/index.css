@@ -171,7 +171,8 @@ body {
     display: flex;
     flex: 1 0 auto; }
   .pt5 .sect .owl-carousel a {
-    color: #000; }
+    color: #000;
+    text-decoration: none; }
     .pt5 .sect .owl-carousel a .product {
       display: flex;
       flex-direction: column;
@@ -204,6 +205,26 @@ body {
         .pt5 .sect .owl-carousel a .product p.with-tax span {
           font-size: 2em;
           font-weight: bold; }
+
+.match {
+  z-index: 999;
+  position: fixed;
+  top: 80px;
+  right: 3%;
+  padding: 15px 20px;
+  background: #9f9f9f;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px #434343; }
+  .match a {
+    text-shadow: 1px 1px 1px #434343;
+    color: #fff; }
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: white;
+  border: none; }
 
 .card {
   background-color: transparent;

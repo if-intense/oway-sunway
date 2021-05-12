@@ -239,6 +239,7 @@ body {
       }
       a {
         color: #000;
+        text-decoration:none;
           .product {
           display: flex;
           flex-direction: column;
@@ -289,8 +290,29 @@ body {
 }
 
 
+.match {
+  z-index: 999;
+  position:fixed;
+  top:80px;
+  right:3%;
+  padding:15px 20px;
+  background:$nobel;
+  font-weight:bold;
+  border-radius:10px;
+  box-shadow:2px 3px 6px $charcoal;
+  a {
+    text-shadow:1px 1px 1px $charcoal;
+    color:$primary-white;
+  }
+}
 
 
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: white;
+    border: none;
+}
 
 
 
